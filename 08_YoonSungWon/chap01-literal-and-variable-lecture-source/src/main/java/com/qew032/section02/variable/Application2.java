@@ -76,6 +76,8 @@ public class Application2 {
     boolean isAlive;
     boolean isDead;
 
+
+
   }
 
 }
