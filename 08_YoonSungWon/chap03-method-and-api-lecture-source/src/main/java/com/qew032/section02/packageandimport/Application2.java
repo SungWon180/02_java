@@ -1,5 +1,7 @@
 package com.qew032.section02.packageandimport;
 
+import java.lang.*;   // java.lang 패키지 내 모든 클래스 가져오기
+
 // [import]
 // 외부 클래스를 가지고 와서 배치
 // 이후 현재 클래스에서 사용 시 클래스명만 작성하면 된다.
