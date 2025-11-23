@@ -78,19 +78,5 @@ int dkfljaefikajoiefjawoifejwioqafjkekkkefkldfaklfdsalkfdsklajdjkasfjkalkfekwlaf
     boolean isAlive;
     boolean isDead;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  }
+         }
 }

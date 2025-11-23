@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Application2.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #0033b3;}
+.s1 { color: #080808;}
+.s2 { color: #8c8c8c; font-style: italic;}
+.s3 { color: #1750eb;}
+.s4 { color: #067d17;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Application2.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.ohgiraffers.section02.variable;</span>
+
+<span class="s0">public class </span><span class="s1">Application2 {</span>
+ <span class="s0">public static void </span><span class="s1">main(String[] args){</span>
+
+   <span class="s2">/*변수 명명 규칙 확인*/</span>
+ <span class="s2">// 1-1. 동일한 범위 {},블럭 내에서는</span>
+ <span class="s2">//  int age; 에러</span>
+   <span class="s2">// 1-2. 예약어 사용 불가</span>
+
+ <span class="s2">//int true; 에러</span>
+ <span class="s2">//int long; 에러</span>
+
+   <span class="s2">// 1-3. 대소문자를 구분한다</span>
+   <span class="s0">int </span><span class="s1">inum;</span>
+   <span class="s0">int </span><span class="s1">Inum;</span>
+
+   <span class="s2">// 1-4. 변수명은 숫자로 시작할 수 없다</span>
+   <span class="s2">// int 1age; 에러</span>
+   <span class="s0">int </span><span class="s1">age1;</span>
+   <span class="s0">int </span><span class="s1">age2age;</span>
+
+   <span class="s2">// 1-5. 특수 기호는 _(언더스코어), $(달러)만 사용 가능</span>
+   <span class="s0">int </span><span class="s1">_age;</span>
+   <span class="s0">int </span><span class="s1">$age;</span>
+   <span class="s0">int </span><span class="s1">a_a$e;</span>
+
+   <span class="s2">/* java &amp; 개발자들의 약속(규약)*/</span>
+   <span class="s2">// 2-1. 변수명의 길이 제한은 없다.</span>
+   <span class="s0">int </span><span class="s1">wesdfsghaesgrhdftatgre = </span><span class="s3">10</span><span class="s1">;</span>
+   <span class="s1">System.out.println(</span><span class="s4">&quot;wesdfsghaesgrhdftatgre = &quot; </span><span class="s1">+ wesdfsghaesgrhdftatgre);</span>
+
+   <span class="s2">/*2-2 여러 단어의 합성어는 Camel-Case 형식으로 작성한다. 
+   * - Camel-Case(낙타 표기법) 
+   * - 모든 단어를 붙여 쓰되, 연결되는 단어의 첫 글자를 대문자로 표현*/</span>
+   <span class="s0">int </span><span class="s1">maxAge = </span><span class="s3">40</span><span class="s1">;</span>
+    <span class="s0">int </span><span class="s1">showMeTheMoney = </span><span class="s3">100000</span><span class="s1">;</span>
+    <span class="s1">String myNameIsBaekDongHyen = </span><span class="s4">&quot;백동현&quot;</span><span class="s1">;</span>
+
+        <span class="s2">/* 2-3. 단어와 단어 사이를 연결할 때 _(언더스코어를) 사용하지 않는다 
+        Snake-CAse : 연결되는 단어 사이를 _로 연결 
+        -&gt; 다음 언어 또는 DB와 연결 시 모호함 발생시킬 수 있음 
+        * */</span>
+
+   <span class="s0">int </span><span class="s1">user_name; </span><span class="s2">// 에러는 아니지만 쓰지말자!</span>
+   <span class="s0">int </span><span class="s1">userName;</span>
+
+
+   <span class="s2">/* 2-4 한글로 변수명을 설정할 수 있지만 권장 x 
+   * 한글 한자는 호환이 안될수 있기 때문*/</span>
+   <span class="s0">int </span><span class="s1">나이 = </span><span class="s3">20</span><span class="s1">;</span>
+   <span class="s1">String 이름 = </span><span class="s4">&quot;홍길동&quot;</span><span class="s1">;</span>
+   <span class="s0">double </span><span class="s1">몸무게 = </span><span class="s3">70.1</span><span class="s1">;</span>
+
+   <span class="s1">System.out.println(</span><span class="s4">&quot;나이 = &quot; </span><span class="s1">+ 나이);</span>
+   <span class="s1">System.out.println(</span><span class="s4">&quot;이름 = &quot; </span><span class="s1">+ 이름);</span>
+   <span class="s1">System.out.println(</span><span class="s4">&quot;몸무게 = &quot; </span><span class="s1">+ 몸무게);</span>
+
+   <span class="s2">/* 2-5. 변수명은 저장된 값이 어떤 의미를 가지는지 알 수 있게 작명 
+   * */</span>
+<span class="s0">int </span><span class="s1">s = </span><span class="s3">100</span><span class="s1">; </span><span class="s2">// 변수 선언과 동시에 초기화</span>
+   <span class="s0">int </span><span class="s1">score = </span><span class="s3">100</span><span class="s1">;</span>
+
+   <span class="s2">/* 2-6 전형적인 변수명이 있다면 사용하자 
+   * */</span>
+   <span class="s0">int </span><span class="s1">sum = </span><span class="s3">0</span><span class="s1">;</span>
+   <span class="s0">int </span><span class="s1">max = Integer.MAX_VALUE; </span><span class="s2">// int 최대 값</span>
+   <span class="s0">int </span><span class="s1">min = Integer.MIN_VALUE; </span><span class="s2">// int 최소 값</span>
+   <span class="s0">double </span><span class="s1">avg = </span><span class="s3">2.345</span><span class="s1">;</span>
+
+   <span class="s2">/* 2-7 변수명은 명사로 작성할 수 있도록 한다 
+   * */</span>
+   <span class="s1">String goHome; </span><span class="s2">// 동사 권잘 X, 동사는 method 이름으로 권장</span>
+   <span class="s1">String Home;</span>
+
+
+   <span class="s2">/* 2-8 boolean 변수 이름은 가급적 의문문으로 작명 
+   * */</span>
+   <span class="s0">boolean </span><span class="s1">isTrue = </span><span class="s0">true</span><span class="s1">;</span>
+   <span class="s0">boolean </span><span class="s1">isFalse = </span><span class="s0">false</span><span class="s1">;</span>
+   <span class="s0">boolean </span><span class="s1">isAlive;</span>
+   <span class="s0">boolean </span><span class="s1">isDead;</span>
+
+
+
+
+  <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

@@ -1,6 +1,7 @@
 package com.ohgiraffers.section02.looping;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class A_for {
   
@@ -38,13 +39,82 @@ public class A_for {
   public void testForExample2(){
 
     int sum = 0; // 반복문 수행 전에 결과를 저장할 변수를 선언
-    
+
     for (int i = 1; i <= 100; i++) {
       sum += i; // 1 ~ 100까지 sum 변수에 i값을 누적
     }
 
     System.out.println("합계 : " + sum);
   }
+
+
+  /* 1부터 입력된 값 까지의 합 */
+  public void testForExample3(){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("1 보다 큰 정수 입력 : ");
+    int input = sc.nextInt();
+
+    int sum = 0;
+    for (int i = 1; i <= input; i++) {
+      sum += i;
+    }
+
+    System.out.println("합계 : " + sum);
+  }
+
+
+  /* 사용자로 부터 2개의 값을 입력 받아
+  * 둘 중 작은 값 이상 큰 값 이하까지의 합을 구하자
+  *  */
+  public void testForExample4(){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("첫 번째 정수 입력 : ");
+    int input1 = sc.nextInt();
+
+    System.out.print("두 번째 정수 입력 : ");
+    int input2 = sc.nextInt();
+
+    // 최대 최소 구하기 - 방법 1
+    int min = 0;
+    int max = 0;
+
+    if(input1 < input2){
+      min = input1;
+      max = input2;
+    } else{ // input1 >= input2
+      min = input2;
+      max = input1;
+    }
+
+    int sum = 0;
+    for (int i = min; i <= max; i++) {
+      sum += i;
+    }
+
+    System.out.println("합계 : " + sum);
+  }
+
+
+  public void testForExample5(){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("첫 번째 정수 입력 : ");
+    int input1 = sc.nextInt();
+
+    System.out.print("두 번째 정수 입력 : ");
+    int input2 = sc.nextInt();
+
+    // 최대 최소 구하기 - 방법 2(Java API - Math)
+    int min = Math.min(input1, input2);
+    int max = Math.max(input1, input2);
+
+    int sum = 0;
+    for (int i = min; i <= max; i++) {
+      sum += i;
+    }
+
+    System.out.println("합계 : " + sum);
+  }
+
 
 
 
