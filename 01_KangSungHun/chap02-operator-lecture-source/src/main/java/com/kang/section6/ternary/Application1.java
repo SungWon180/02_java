@@ -10,8 +10,8 @@ public class Application1 {
     int num1 = 10;
     int num2 = -10;
     /* 양수 음수 판별 */
-    String result1 = num1 > 0 ? "양수" : "음수";
-    String result2 = num2 > 0 ? "양수" : "음수";
+    String result1 = num1 > 0 ? "양수" : "0 & 음수";
+    String result2 = num2 <= 0 ? "0 & 음수" : " 양수";
 
     System.out.println("result1 = " + result1);
     System.out.println("result2 = " + result2 );
@@ -21,10 +21,12 @@ public class Application1 {
     char gender2 = '여';
 
     String result3 = gender1 == '남' ? "남자입니다." : "여자입니다";
-    String result4 = gender2 == '남' ? "남자입니다." : "여자입니다";
+    String result4 = gender2 == '여' ? "여자입니다." : "남자입니다";
 
+    System.out.println("result3 = " + result3);
+    System.out.println("result4 = " + result4);
 
-    System.out.println("==== 상항 연산자 중첩 사용 =====");
+    System.out.println("==== 삼항 연산자 중첩 사용 =====");
     int num = 100;
     // 정수의 종류 : 양의 정수, 0, 음의 정수
 
@@ -33,7 +35,6 @@ public class Application1 {
           num > 0 ? "양수 입니다." : "음수 입니다.";
 
     System.out.println("result = " + result);
-
-
+    
   }
 }

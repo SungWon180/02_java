@@ -20,7 +20,8 @@ public class Application {
         //cIfElseif.imporveIfElseIfStatement();
       //  D_switch d_switch = new D_switch();
       // d_switch.testSimpleSwitchStatement();
-
+       // Homework homework = new Homework();
+        Homework homework2 = new Homework();
     }
 
 }

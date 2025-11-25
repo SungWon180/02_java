@@ -89,7 +89,5 @@ public class Application1 {
     System.out.println(str3.equals(str4));
 
 
-
-
   }
 }

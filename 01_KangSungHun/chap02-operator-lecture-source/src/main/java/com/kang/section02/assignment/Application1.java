@@ -18,16 +18,16 @@ public class Application1 {
     System.out.println("num = " + num); // 15
 
     num -= 5; // num = num + ;
-    System.out.println("num = " + num); // 15
+    System.out.println("num = " + num); // 10
 
     num *= 2; // num = num * 2 ;
-    System.out.println("num = " + num); // 15
+    System.out.println("num = " + num); // 20
 
-    num /= 6;  num = num / 6 ;
-    System.out.println("num = " + num); // 15
+    num /= 6;  // num = num / 6 ;
+    System.out.println("num = " + (float)num); // 3.33333
 
-    num %= 2; num = num + num ;
-    System.out.println("num = " + num); // 15
+    num %= 2; // num = num + num ;
+    System.out.println("num = " + (double)num); //
 
 
   }

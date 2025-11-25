@@ -1,5 +1,7 @@
 package com.kth.section02.looping;
 
+import java.util.Scanner;
+
 public class Application {
   public static void main(String[] args){
 
@@ -14,7 +16,39 @@ public class Application {
     //b_nestedFor.printTable1();
     //b_nestedFor.printTable2();
     //b_nestedFor.printGuguDan();
-    b_nestedFor.printTriangleStar();
+    //b_nestedFor.printTriangleStar();
+
+    C_while c_while = new C_while();
+    //c_while.testSimpleWhileStatement();
+    //c_while.testSimpleWhileExample1();
+    //c_while.testSimpleDoWhileState();
+
+    /* switch + do ~ while */
+    Scanner sc = new Scanner(System.in);
+    int input = 0;
+
+    do{
+      System.out.println("===== while 예시 선택 메뉴 =====");
+      System.out.println("1. testSimpleWhileStatement");
+      System.out.println("2. testSimpleWhileExample1");
+      System.out.println("3. testSimpleDoWhileState");
+      System.out.println("0. 종료");
+      System.out.print("메뉴 번호 입력 >> ");
+      input = sc.nextInt();
+      sc.nextLine(); // 입력 버퍼에 남은 개행문자 제거
+
+      switch (input){
+        case 1 : c_while.testSimpleWhileStatement(); break;
+        case 2 : c_while.testSimpleWhileExample1(); break;
+        case 3 : c_while.testSimpleDoWhileState(); break;
+        case 0 :
+          System.out.println("===== 프로그램 종료 ====="); break;
+        default:
+          System.out.println("메뉴에 없는 번호를 입력함");
+      }
+
+    }while(input != 0);
+
 
   }
 }

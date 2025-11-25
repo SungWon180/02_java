@@ -9,9 +9,7 @@ public class Application1 {
     * 1씩 증가 / 감소
     * - 전위 / 후위 연산이 존재
     * 전위 연산 : 모든 연산 중 제일 먼저 연산을 수행
-    * 후위 연산 : 모든 연산 중 제일 맞미ㅏㄱ에 연산을 수행
-
-     */
+    * 후위 연산 : 모든 연산 중 제일 맞미ㅏㄱ에 연산을 수행  */
 
     int num = 20;
     System.out.println("num = " + num); // 20
@@ -44,17 +42,21 @@ public class Application1 {
     System.out.println("num5 = " + num5);
 
     int a = 3;
-    int b = ++a + 5;
-    int c = b-- + a + 1;
-    int result = a++ + b-- - --c;
-
-
+    System.out.println("a = " + a);
+    int b = ++a + 5; // 9
+    System.out.println("b = " + b);
+    int c = b-- + a + 1; // 14
+    System.out.println("c = " + c);
+    int result = a++ + b-- - --c; // - 1
+    System.out.println("result = " + result);
 
     int page = 1;
     System.out.println("현재 페이지는 " + page++ + "p 입니다.");
     System.out.println("현재 페이지는 " + page++ + "p 입니다.");
     System.out.println("현재 페이지는 " + page++ + "p 입니다.");
     System.out.println("현재 페이지는 " + page++ + "p 입니다.");
+
+
 
   }
 }

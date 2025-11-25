@@ -49,18 +49,22 @@ public class Application1 {
 
       if(originalChar == ' '){
         encryptedChar = ' ';
-      } else if(originalChar >= 'A' && originalChar <= 'Z'){
-
-      } else if(originalChar >= 'a' && originalChar <= 'z'){
-
-      }else{
+      } else if(originalChar >= 'A' && originalChar <= 'Z') {
+        encryptedChar = (char) (originalChar + specialMove);
+        if (encryptedChar > 'Z') {
+          encryptedChar = (char) (encryptedChar - 26);
+        }
+      } else if(originalChar >= 'a' && originalChar <= 'z') {
+        encryptedChar = (char) (originalChar + specialMove);
+        if (encryptedChar > 'z') {
+          encryptedChar = (char) (encryptedChar - 26);
+        }
+      } else {
         encryptedChar = originalChar;
       }
-
+    result.append(encryptedChar);
     }
-
-
-
+    System.out.println(result.toString());
   }
 
 }

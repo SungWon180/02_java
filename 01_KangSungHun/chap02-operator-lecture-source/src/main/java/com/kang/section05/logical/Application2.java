@@ -22,10 +22,7 @@ public class Application2 {
     /* 4. ch3가 대소문자 구분 없이 영어 알파벳이 맞는가?
      */
     char ch3 = 'o';
-    System.out.println(ch3 >= 'A' && ch3 <= 'Z') || (ch3 >= 'a' && ch3 <= 'z');
-
-
-
+    System.out.println((ch3 >= 'A' && ch3 <= 'Z') || (ch3 >= 'a' && ch3 <= 'z'));
 
 
   }
