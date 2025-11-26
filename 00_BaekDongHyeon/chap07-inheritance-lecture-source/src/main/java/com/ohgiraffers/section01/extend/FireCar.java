@@ -42,9 +42,7 @@ public class FireCar extends Car{
 
   @Override
   public void soundHorn(){
-
+    System.out.println("빠앙!!!!!!!!!! 에에엥!!!!! 빠앙!!!!!!!!");
   }
-
-
 
 }

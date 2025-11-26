@@ -28,5 +28,14 @@ public class Application {
     racingCar.soundHorn();
     racingCar.stop();
 
+    System.out.println("--------------------------");
+
+    F1Car f1Car = new F1Car();
+    f1Car.run();
+    f1Car.soundHorn();
+    f1Car.useBooster();
+    f1Car.stop();
+
+
   }
 }
