@@ -34,14 +34,17 @@ public class Application
         System.out.println("member.gender = " + member.gender);
         System.out.println("member.hobby = " + member.hobby);
 
-
+        // **변수(variable)**는 값이 변할 수 있는 수
         /*필드에 값 대임*/
-        member.id = "user01";
+        member.id = "user01"; // user01은 변수
         member.pwd = "pass01";
         member.name = "홍길동";
         member.age = 20;
         member.gender = '남';
         member.hobby = new String[] {"축구", "볼링", "테니스"}; // 배열이므로 주소로 값을 가져옴
+
+        /*int[] arr;
+        arr = new int{1, 2, 3}; // 이 배열은 추론이 확실하지 않다 그래서  new int 라는 타입을 명시해줘야함*/
 
         System.out.println("변경 후 member.id : " + member.id);
         System.out.println("변경 후 member.pwd : " + member.pwd);

@@ -25,5 +25,6 @@ public class Member
     int age;
     char gender;
     String[] address;
-    String[] hobby;
+    String[] hobby
+            ;
 }
